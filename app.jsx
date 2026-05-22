@@ -25,7 +25,7 @@ function Nav() {
         <nav className={`nav ${isVisible ? '' : 'nav-hidden'}`}>
             <div className="nav-inner">
                 <a href="#portada" className="brand" style={{ textDecoration: "none", color: "inherit" }}>
-                    <span className="brand-mark"></span>
+                    <img src="./assets/icon.png" alt="VetVault Logo" className="brand-mark" />
                     <span>VetVault</span>
                 </a>
                 <div className="nav-links">
@@ -47,7 +47,7 @@ function Footer() {
             <div className="footer-inner">
                 <div className="footer-content">
                     <div className="footer-logo">
-                        <span className="brand-mark"></span>
+                        <img src="./assets/icon.png" alt="VetVault Logo" className="brand-mark" />
                         <span>VetVault</span>
                     </div>
                     <p>Todos los derechos reservados © 2026</p>

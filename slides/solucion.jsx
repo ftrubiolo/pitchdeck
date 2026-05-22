@@ -22,7 +22,7 @@ function Solucion() {
                 
                 <div className="eco-center">
                     <div className="pulse-circle">
-                        <div className="brand-mark-large"></div>
+                        <img src="./assets/icon.png" alt="VetVault Logo" className="brand-mark-large" />
                     </div>
                     <span className="eco-text">Mismo Ecosistema</span>
                 </div>
