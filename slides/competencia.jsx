@@ -51,20 +51,21 @@ function Competencia() {
 
                 <div className="vs-column our-advantage">
                     <div className="advantage-badge">Nuestra Ventaja</div>
-                    <h3 className="column-title advantage-title">Sincronización Automática</h3>
+                    <h3 className="column-title advantage-title">Ecosistema Dual (B2B2C)</h3>
                     <div className="advantage-content">
                         <div className="advantage-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                                <polyline points="3.29 7 12 12 20.71 7"/>
-                                <line x1="12" x2="12" y1="22" y2="12"/>
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                                <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/>
+                                <path d="m18 15-2-2"/>
+                                <path d="m15 18-2-2"/>
                             </svg>
                         </div>
                         <p className="advantage-desc">
-                            El dueño <strong>no carga nada</strong>. El veterinario ingresa los datos en consulta y todo se <strong>sincroniza en la nube</strong>.
+                            El veterinario opera rápido en su portal web y el dueño recibe todo en su celular. <strong>Una herramienta de retención total.</strong>
                         </p>
                         <div className="advantage-highlight">
-                            No es solo software de gestión, es una <strong>herramienta de fidelización</strong>.
+                            El software se paga solo: los <strong>recordatorios automatizados</strong> (vacunas y turnos) evitan la fuga de clientes.
                         </div>
                     </div>
                 </div>

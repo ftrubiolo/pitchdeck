@@ -27,10 +27,10 @@ function Funcionalidades() {
                             </div>
                         </div>
                         <div className="f-item">
-                            <div className="f-icon">🔐</div>
+                            <div className="f-icon">📅</div>
                             <div className="f-text">
-                                <h4>Roles y Permisos (RBAC)</h4>
-                                <p>Control de acceso seguro por niveles para todo el staff.</p>
+                                <h4>Agenda Automatizada</h4>
+                                <p>Optimiza tus turnos y reduce inasistencias, devolviéndote horas valiosas de consulta.</p>
                             </div>
                         </div>
                         <div className="f-item highlight-item">

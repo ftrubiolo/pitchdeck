@@ -41,20 +41,15 @@ function Cierre() {
                 <div className="cierre-right">
                     <div className="contact-card">
                         <div className="contact-qr">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" opacity="0.3">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                                <path d="M9 3v7h7v-7z"></path>
-                                <path d="M15 9h-6v6h6z"></path>
-                            </svg>
-                            <span className="qr-hint">Escanear para conectar</span>
+                            <a href="beta.html" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', display: 'block', display: 'flex', justifyContent: 'center'}}>
+                                <img src="./assets/qr-code.png" alt="Código QR Beta" style={{width: '110px', height: '110px', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.1)'}} />
+                            </a>
+                            <span className="qr-hint">Escanear para aplicar</span>
                         </div>
                         <div className="contact-info">
-                            <h3 className="contact-name">Equipo de Diseño</h3>
-                            <p className="contact-role">Product Design & UX/UI</p>
-                            <a href="mailto:design@equipo.com" className="contact-email">Contactar al equipo</a>
+                            <h3 className="contact-name">Únete a la Beta Privada</h3>
+                            <p className="contact-role">Cupos limitados. Escanea el QR o haz clic en el botón para solicitar acceso anticipado para tu clínica.</p>
+                            <a href="beta.html" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Solicitar Acceso Beta</a>
                         </div>
                     </div>
                 </div>

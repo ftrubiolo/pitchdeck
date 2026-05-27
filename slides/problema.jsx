@@ -42,7 +42,7 @@ export default function Problema() {
             </div>
 
             <div className="problema-container">
-                <div className="problema-card">
+                <div className="problema-card vet-card">
                     <div className="problema-card-content">
                         <h3>Clínica Veterinaria</h3>
                         <div className="pain-points-tags">
@@ -53,7 +53,7 @@ export default function Problema() {
                     </div>
                 </div>
 
-                <div className="problema-card">
+                <div className="problema-card owner-card">
                     <div className="problema-card-content">
                         <h3>Dueños de Mascotas</h3>
                         <div className="pain-points-tags">

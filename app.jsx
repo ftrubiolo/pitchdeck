@@ -29,7 +29,7 @@ function Nav() {
                     <span>VetVault</span>
                 </a>
                 <div className="nav-links">
-                    <a href="#problema" className="nav-link">Problema / Solución</a>
+                    <a href="#problema" className="nav-link"><strong>Problema / Solución</strong></a>
                     <a href="#producto" className="nav-link">El Producto</a>
                     <a href="#modelo-negocio" className="nav-link">Mercado</a>
                     <a href="#roadmap" className="nav-link">Roadmap</a>
@@ -125,8 +125,8 @@ function App() {
             <SlideProgress />
             <Portada />
             <Problema />
-            <Usuario />
             <Solucion />
+            <Usuario />
             <Producto />
             <Funcionalidades />
             <Mercado />
