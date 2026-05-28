@@ -712,8 +712,8 @@ body {
   flex: 1.2;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .mockup-main {

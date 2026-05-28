@@ -9,11 +9,11 @@ function Producto() {
             <div className="producto-showcase">
                 <div className="mockups-wrapper">
                     <div className="mockup-main">
-                        <img src="./assets/placeholder-image.png" alt="Portal Clínico" className="mockup-img desktop" />
+                        <img src="./assets/vetmockup.png" alt="Portal Clínico" className="mockup-img desktop" />
                         <span className="mockup-badge">Portal Web (Veterinarios)</span>
                     </div>
                     <div className="mockup-secondary">
-                        <img src="./assets/placeholder-image.png" alt="App Paciente" className="mockup-img mobile" />
+                        <img src="./assets/usrmockup.png" alt="App Paciente" className="mockup-img mobile" />
                         <span className="mockup-badge">App Móvil (Dueños)</span>
                     </div>
                 </div>
