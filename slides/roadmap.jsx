@@ -5,7 +5,7 @@ function Roadmap() {
             <p className="roadmap-lead">El Camino hacia la Escalabilidad</p>
 
             <div className="timeline-container">
-                
+
                 <div className="timeline-item">
                     <div className="timeline-marker">
                         <div className="marker-dot active-dot"></div>
@@ -66,7 +66,7 @@ function Roadmap() {
                             <h3>Fase 4: Expansión y Premium</h3>
                         </div>
                         <ul className="phase-list">
-                            <li>Expansión a nivel regional/provincial y app móvil nativa para dueños.</li>
+                            <li>Expansión a nivel regional/provincial.</li>
                             <li>Módulos premium: pasarela de pagos integrada e inventario avanzado.</li>
                         </ul>
                     </div>
