@@ -121,8 +121,78 @@ function SlideProgress() {
 
 function App() {
     useEffect(() => {
+        let targetIndex = null;
+        let lastNavTime = 0;
+
+        const handleReset = () => {
+            targetIndex = null;
+        };
+
+        const getActiveIndex = (slides) => {
+            const viewportMiddle = window.innerHeight / 2;
+            let active = 0;
+            let minDistance = Infinity;
+
+            for (let i = 0; i < slides.length; i++) {
+                const rect = slides[i].getBoundingClientRect();
+                if (rect.top <= viewportMiddle && rect.bottom >= viewportMiddle) {
+                    return i;
+                }
+                const dist = Math.abs(rect.top);
+                if (dist < minDistance) {
+                    minDistance = dist;
+                    active = i;
+                }
+            }
+            return active;
+        };
+
         const handleKeyDown = (e) => {
             if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+                return;
+            }
+
+            // Avanzar diapositiva: Flecha Derecha, Flecha Abajo, PageDown
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') {
+                const slides = Array.from(document.querySelectorAll('.slide'));
+                if (!slides.length) return;
+
+                e.preventDefault();
+                let current = targetIndex;
+                if (current === null || Date.now() - lastNavTime > 700) {
+                    current = getActiveIndex(slides);
+                }
+
+                const nextIndex = Math.min(slides.length - 1, current + 1);
+                targetIndex = nextIndex;
+                lastNavTime = Date.now();
+
+                slides[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (slides[nextIndex].id) {
+                    window.history.replaceState(null, '', `#${slides[nextIndex].id}`);
+                }
+                return;
+            }
+
+            // Retroceder diapositiva: Flecha Izquierda, Flecha Arriba, PageUp
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+                const slides = Array.from(document.querySelectorAll('.slide'));
+                if (!slides.length) return;
+
+                e.preventDefault();
+                let current = targetIndex;
+                if (current === null || Date.now() - lastNavTime > 700) {
+                    current = getActiveIndex(slides);
+                }
+
+                const prevIndex = Math.max(0, current - 1);
+                targetIndex = prevIndex;
+                lastNavTime = Date.now();
+
+                slides[prevIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (slides[prevIndex].id) {
+                    window.history.replaceState(null, '', `#${slides[prevIndex].id}`);
+                }
                 return;
             }
 
@@ -144,7 +214,14 @@ function App() {
         };
 
         window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
+        window.addEventListener('wheel', handleReset, { passive: true });
+        window.addEventListener('touchstart', handleReset, { passive: true });
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('wheel', handleReset);
+            window.removeEventListener('touchstart', handleReset);
+        };
     }, []);
 
     return (
