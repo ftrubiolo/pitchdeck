@@ -233,7 +233,7 @@ function App() {
             <Solucion />
             <Usuario />
             <Producto />
-            <Funcionalidades />
+            {/* <Funcionalidades /> */}
             <Mercado />
             <ModeloNegocio />
             <Competencia />
