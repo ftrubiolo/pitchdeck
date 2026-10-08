@@ -11,7 +11,7 @@ function Mercado() {
                 </p>
 
                 {/* Selector Interactivo de Vista */}
-                <div className="mercado-toggle-container">
+                {/* <div className="mercado-toggle-container">
                     <button 
                         className={`mercado-toggle-btn ${view === 'tam' ? 'active-toggle' : ''}`}
                         onClick={() => setView('tam')}
@@ -28,7 +28,7 @@ function Mercado() {
                         <span className="toggle-bullet bullet-green"></span>
                         <span>Dinámica del Sector & Tracción</span>
                     </button>
-                </div>
+                </div> */}
             </div>
 
             {view === 'tam' ? (
@@ -221,7 +221,7 @@ function Mercado() {
             )}
 
             {/* Banner Inferior: Estrategia de Captura */}
-            <div className="mercado-strategy-bar">
+            {/* <div className="mercado-strategy-bar">
                 <div className="strategy-step">
                     <span className="strategy-num">1</span>
                     <div className="strategy-info">
@@ -245,7 +245,7 @@ function Mercado() {
                         <span>Retención cruzada: el tutor exige VetVault en cada nueva clínica que visita.</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

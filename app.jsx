@@ -95,7 +95,7 @@ function SlideProgress() {
             'modelo-negocio': 'Modelo de Negocio',
             'competencia': 'Competencia',
             'tecnologia': 'Tecnología',
-            'roadmap': 'Roadmap',
+            // 'roadmap': 'Roadmap',
             'cierre': 'Cierre'
         };
         return names[id] || (id.charAt(0).toUpperCase() + id.slice(1));
@@ -238,7 +238,7 @@ function App() {
             <ModeloNegocio />
             <Competencia />
             <Tecnologia />
-            <Roadmap />
+            {/* <Roadmap /> */}
             <Cierre />
             <Footer />
         </>
