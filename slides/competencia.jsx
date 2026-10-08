@@ -16,8 +16,8 @@ function Competencia() {
                                 </svg>
                             </div>
                             <div>
-                                <strong>Sistemas Anticuados</strong>
-                                <p>Software de escritorio difícil de usar y obsoleto.</p>
+                                <strong>Sistemas Legacy de Escritorio</strong>
+                                <p>Herramientas monousuario, lentas, sin acceso para el tutor y sin respaldo en la nube.</p>
                             </div>
                         </li>
                         <li>
@@ -28,8 +28,8 @@ function Competencia() {
                                 </svg>
                             </div>
                             <div>
-                                <strong>Libretas Sanitarias</strong>
-                                <p>Papel que se pierde o se olvida constantemente.</p>
+                                <strong>Libretas Sanitarias de Papel</strong>
+                                <p>Se extravían constantemente, carecen de alertas y pierden la trazabilidad médica.</p>
                             </div>
                         </li>
                         <li>
@@ -40,8 +40,8 @@ function Competencia() {
                                 </svg>
                             </div>
                             <div>
-                                <strong>Apps Aisladas</strong>
-                                <p>El dueño debe llenarlas a mano sin respaldo médico.</p>
+                                <strong>Apps Genéricas Aisladas</strong>
+                                <p>Carga manual sin verificación de matrícula profesional ni respaldo de vademécum oficial.</p>
                             </div>
                         </li>
                     </ul>
@@ -50,22 +50,19 @@ function Competencia() {
                 <div className="vs-divider">VS</div>
 
                 <div className="vs-column our-advantage">
-                    <div className="advantage-badge">Nuestra Ventaja</div>
-                    <h3 className="column-title advantage-title">Ecosistema Dual (B2B2C)</h3>
+                    <div className="advantage-badge">Foso Defensivo</div>
+                    <h3 className="column-title advantage-title">El Diferencial VetVault</h3>
                     <div className="advantage-content">
                         <div className="advantage-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                                <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/>
-                                <path d="m18 15-2-2"/>
-                                <path d="m15 18-2-2"/>
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             </svg>
                         </div>
                         <p className="advantage-desc">
-                            El veterinario opera rápido en su portal web y el dueño recibe todo en su celular. <strong>Una herramienta de retención total.</strong>
+                            <strong>Cumplimiento Normativo Oficial:</strong> Validación en tiempo real del Colegio de Córdoba y catálogo fármaco-vacunal SENASA.
                         </p>
                         <div className="advantage-highlight">
-                            El software se paga solo: los <strong>recordatorios automatizados</strong> (vacunas y turnos) evitan la fuga de clientes.
+                            <strong>Copiloto IA Gemini (14 Tools):</strong> Asistencia clínica activa operando directamente sobre la base de datos, con auditoría inmutable y carnet PDF oficial.
                         </div>
                     </div>
                 </div>

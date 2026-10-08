@@ -1,7 +1,7 @@
 function Cierre() {
     return (
         <section className="slide" id="cierre">
-            <h2 style={{ fontSize: "2.8rem", marginBottom: "0.5rem" }}>Únete a la evolución del Pet Care</h2>
+            <h2 style={{ fontSize: "2.8rem", marginBottom: "0.5rem" }}>El Futuro del Cuidado Veterinario</h2>
 
             <div className="vision-quote">
                 <p>"La tecnología avanza, y la forma en que cuidamos a nuestras mascotas también debe hacerlo. <strong>Conectemos a quienes curan con quienes aman.</strong>"</p>
@@ -10,46 +10,76 @@ function Cierre() {
             <div className="cierre-container">
 
                 <div className="cierre-left">
-                    <h3 className="cierre-subtitle">¿Qué buscamos?</h3>
-                    <div className="ask-cards">
-                        <div className="ask-card">
-                            <div className="ask-icon vet-ask-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Prueba Piloto (Clínicas)</h4>
-                                <p>Buscamos <strong>3 clínicas veterinarias pioneras</strong> para nuestra prueba piloto gratuita. Ayúdanos a perfeccionar el sistema en un entorno real.</p>
+                    <h3 className="cierre-subtitle">Equipo del Proyecto (PIN 2026)</h3>
+                    
+                    <div className="team-grid">
+                        <div className="team-member-card">
+                            <div className="member-info">
+                                <h4>Facundo Rubiolo</h4>
+                                <span className="member-role">GitHub • <a href="https://github.com/ftrubiolo" target="_blank" rel="noopener noreferrer">@ftrubiolo</a></span>
                             </div>
                         </div>
-                        <div className="ask-card">
-                            <div className="ask-icon investor-ask-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="12" y1="1" x2="12" y2="23"></line>
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Capital Semilla (Inversores)</h4>
-                                <p>Buscamos financiamiento para acelerar el despliegue, expandir el equipo y ejecutar la <strong>adquisición de las primeras 50 clínicas</strong>.</p>
+
+                        <div className="team-member-card">
+                            <div className="member-info">
+                                <h4>Tomás Taborda</h4>
+                                <span className="member-role">GitHub • <a href="https://github.com/tabordatomas" target="_blank" rel="noopener noreferrer">@tabordatomas</a></span>
                             </div>
                         </div>
+
+                        <div className="team-member-card">
+                            <div className="member-info">
+                                <h4>Valentín Hinojosa</h4>
+                                <span className="member-role">GitHub • <a href="https://github.com/valexxarg777" target="_blank" rel="noopener noreferrer">@valexxarg777</a></span>
+                            </div>
+                        </div>
+
+                        <div className="team-member-card">
+                            <div className="member-info">
+                                <h4>Ismael Botella</h4>
+                                <span className="member-role">GitHub • <a href="https://github.com/ismaelbotella997" target="_blank" rel="noopener noreferrer">@ismaelbotella997</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="institution-card">
+                        <p><strong>Instituto Superior Villa del Rosario</strong> — Córdoba, 2026</p>
+                        <p className="inst-details">Técnico Superior en Desarrollo Web y Software</p>
+                        <p>ㅤㅤㅤ</p>
+                        <p className="inst-details"><em>Mgter. Lic. Enzo Varela</em></p>
                     </div>
                 </div>
 
                 <div className="cierre-right">
                     <div className="contact-card">
-                        <div className="contact-qr">
-                            <a href="beta.html" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', display: 'block', display: 'flex', justifyContent: 'center'}}>
-                                <img src="./assets/qr-code.png" alt="Código QR Beta" style={{width: '110px', height: '110px', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.1)'}} />
+                        <img src="./assets/icon.png" alt="VetVault" style={{ width: "64px", height: "64px", marginBottom: "1rem" }} />
+                        <h3 className="contact-name">VetVault en Producción</h3>
+                        <p className="contact-details-text">
+                            Plataforma de código abierto desarrollada en monorrepitorio TypeScript con React 19, Fastify 5 y Google Gemini AI.
+                        </p>
+
+                        <div className="project-links">
+                            <a 
+                                href="https://github.com/ftrubiolo/proyecto-vet-pp" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="btn btn-primary"
+                                style={{ width: "100%", justifyContent: "center", marginBottom: "0.75rem", display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                Repositorio en GitHub
                             </a>
-                            <span className="qr-hint">Escanear para aplicar</span>
-                        </div>
-                        <div className="contact-info">
-                            <h3 className="contact-name">Únete a la Beta Privada</h3>
-                            <p className="contact-role">Cupos limitados. Escanea el QR o haz clic en el botón para solicitar acceso anticipado para tu clínica.</p>
-                            <a href="beta.html" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Solicitar Acceso Beta</a>
+
+                            <a 
+                                href="https://ftrubiolo.github.io/prototipo/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="btn btn-outline"
+                                style={{ width: "100%", justifyContent: "center", display: "inline-flex", alignItems: "center", gap: "0.5rem" }}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                                Prototipo Web Interactivo
+                            </a>
                         </div>
                     </div>
                 </div>

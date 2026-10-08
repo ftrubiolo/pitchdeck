@@ -2,7 +2,7 @@ function Tecnologia() {
     return (
         <section className="slide" id="tecnologia">
             <h2>Stack Tecnológico</h2>
-            <p className="tech-lead">Una arquitectura moderna, robusta y escalable construida para crecer.</p>
+            <p className="tech-lead">Monorrepitorio modular en TypeScript con arquitectura por capas desacoplada.</p>
 
             <div className="tech-grid">
                 
@@ -13,11 +13,12 @@ function Tecnologia() {
                             <path d="M22 12c0 4.418-4.477 8-10 8S2 16.418 2 12s4.477-8 10-8 10 3.582 10 8z"/>
                         </svg>
                     </div>
-                    <h3>Frontend</h3>
-                    <p className="tech-desc">Experiencia de Usuario</p>
+                    <h3>Frontend SPA</h3>
+                    <p className="tech-desc">Interfaz Glassmorphism reactiva</p>
                     <div className="tech-tags">
-                        <span className="tag">React</span>
-                        <span className="tag">TypeScript</span>
+                        <span className="tag">React 19</span>
+                        <span className="tag">Vite 8</span>
+                        <span className="tag">Tailwind v4</span>
                     </div>
                 </div>
 
@@ -30,10 +31,12 @@ function Tecnologia() {
                             <path d="M12 12L3 7.1"/>
                         </svg>
                     </div>
-                    <h3>Backend & API</h3>
-                    <p className="tech-desc">El Motor del Sistema</p>
+                    <h3>Backend REST API</h3>
+                    <p className="tech-desc">Motor de latencia ultra baja</p>
                     <div className="tech-tags">
-                        <span className="tag">Node.js</span>
+                        <span className="tag">Fastify 5</span>
+                        <span className="tag">Node 22</span>
+                        <span className="tag">TypeScript</span>
                     </div>
                 </div>
 
@@ -45,11 +48,12 @@ function Tecnologia() {
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
                         </svg>
                     </div>
-                    <h3>Base de Datos</h3>
-                    <p className="tech-desc">Seguridad de la Información</p>
+                    <h3>Persistencia & Storage</h3>
+                    <p className="tech-desc">Transacciones ACID y objetos S3</p>
                     <div className="tech-tags">
-                        <span className="tag">Relacional</span>
-                        <span className="tag">Cloud</span>
+                        <span className="tag">PostgreSQL 16</span>
+                        <span className="tag">Drizzle ORM</span>
+                        <span className="tag">MinIO / S3</span>
                     </div>
                 </div>
 
@@ -60,10 +64,12 @@ function Tecnologia() {
                             <circle cx="12" cy="12" r="3"/>
                         </svg>
                     </div>
-                    <h3>Inteligencia Artificial</h3>
-                    <p className="tech-desc">El Valor Agregado</p>
+                    <h3>IA & Servicios</h3>
+                    <p className="tech-desc">Copiloto Clínico y Pagos SaaS</p>
                     <div className="tech-tags">
-                        <span className="tag ai-tag">Integración IA</span>
+                        <span className="tag ai-tag">Gemini 3.1 (14 Tools)</span>
+                        <span className="tag">Mercado Pago</span>
+                        <span className="tag">Docker</span>
                     </div>
                 </div>
 

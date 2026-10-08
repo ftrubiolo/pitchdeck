@@ -34,7 +34,7 @@ function Nav() {
                     <a href="#modelo-negocio" className="nav-link">Mercado</a>
                     <a href="#roadmap" className="nav-link">Roadmap</a>
                     <a href="#cierre" className="nav-link">Equipo</a>
-                    <a href="#cierre" className="btn btn-primary btn-sm" style={{ marginLeft: "0.5rem" }}>Solicitar Acceso Beta</a>
+                    <a href="#cierre" className="btn btn-primary btn-sm" style={{ marginLeft: "0.5rem" }}>Equipo / Contacto</a>
                 </div>
             </div>
         </nav>
@@ -92,6 +92,7 @@ function SlideProgress() {
             'funcionalidades': 'Funcionalidades',
             'mercado': 'Tamaño del Mercado',
             'modelonegocio': 'Modelo de Negocio',
+            'modelo-negocio': 'Modelo de Negocio',
             'competencia': 'Competencia',
             'tecnologia': 'Tecnología',
             'roadmap': 'Roadmap',
@@ -119,6 +120,33 @@ function SlideProgress() {
 }
 
 function App() {
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+                return;
+            }
+
+            if (e.key === 'f' || e.key === 'F') {
+                if (!document.fullscreenElement) {
+                    if (document.documentElement.requestFullscreen) {
+                        document.documentElement.requestFullscreen().catch(() => {});
+                    } else if (document.documentElement.webkitRequestFullscreen) {
+                        document.documentElement.webkitRequestFullscreen();
+                    }
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen().catch(() => {});
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, []);
+
     return (
         <>
             <Nav />

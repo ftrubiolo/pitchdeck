@@ -1,12 +1,15 @@
 function Usuario() {
     const [activePersona, setActivePersona] = React.useState(null);
 
-    const vetQuote = "Amo mi profesión, pero el caos administrativo me está consumiendo. Necesito una herramienta que no me interrumpa mientras estoy en el consultorio y que me ayude a fidelizar a mis clientes sin esfuerzo.";
-    const ownerQuote = "Tengo mi vida entera en el celular, pero la salud de mi perro está en una libretita de papel que siempre pierdo. Ojalá mi veterinario me avisara automáticamente cuándo le toca su próxima dosis.";
+    const vetQuote = "Amo la práctica médica, pero pierdo horas en tareas administrativas y buscando dosis. Necesito fichas inmediatas, vademécum SENASA verificado y que el sistema recuerde los refuerzos a mis pacientes sin esfuerzo.";
+    const ownerQuote = "Gestiono mi vida desde el celular, pero la salud de mi perro depende de una libreta de papel que siempre pierdo. Necesito su carnet de vacunas oficial en PDF disponible para viajes y saber cuándo toca su próximo refuerzo.";
 
     return (
         <section className="slide" id="usuario">
             <h2>Nuestros Usuarios</h2>
+            <p className="solucion-lead" style={{ marginBottom: "2rem" }}>
+                Diseñado para resolver las necesidades concretas de quienes cuidan la salud animal.
+            </p>
             
             <div className={`interactive-personas-container ${activePersona ? 'has-active' : ''}`}>
                 
@@ -23,7 +26,8 @@ function Usuario() {
                             <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
                         </svg>
                     </div>
-                    <h3>El Veterinario</h3>
+                    <h3>El Médico Veterinario</h3>
+                    <span className="badge b2b-badge" style={{ marginBottom: "0.5rem" }}>Profesional Matriculado</span>
                     <div className="quote-bubble vet-quote">
                         <p>"{vetQuote}"</p>
                     </div>
@@ -42,7 +46,8 @@ function Usuario() {
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
                     </div>
-                    <h3>Dueño de Mascota</h3>
+                    <h3>El Tutor de Mascota</h3>
+                    <span className="badge b2c-badge" style={{ marginBottom: "0.5rem" }}>Cuidado Preventivo</span>
                     <div className="quote-bubble owner-quote">
                         <p>"{ownerQuote}"</p>
                     </div>
@@ -51,7 +56,7 @@ function Usuario() {
             </div>
 
             {activePersona === null && (
-                <p className="interaction-hint">Haz clic en un perfil para conocer su historia</p>
+                <p className="interaction-hint">Haz clic en un perfil para conocer su perspectiva</p>
             )}
         </section>
     );
